@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lowery Technology Solutions | Remote IT Support (US Only)</title>
+  <meta name="description" content="Lowery Technology Solutions provides fast, secure remote IT support for home users and small businesses across the United States. Pay before your session via Stripe." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#121b2e;
+      --text:#e9eefc;
+      --muted:#b7c2e6;
+      --border:rgba(255,255,255,.12);
+      --shadow:0 18px 45px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(122,162,255,.20), transparent 55%),
+        radial-gradient(1000px 650px at 85% 30%, rgba(99,230,190,.14), transparent 60%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:24px}
+
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.65);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      max-width:var(--max); margin:0 auto;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 24px; gap:16px;
+    }
+    .logo{font-weight:900}
+    .badge{
+      font-size:12px; color:var(--muted);
+      padding:4px 10px; border:1px solid var(--border);
+      border-radius:999px; margin-left:8px;
+    }
+    .navlinks a{
+      margin-left:12px; font-size:14px;
+      color:var(--muted); text-decoration:none;
+    }
+    .navlinks a:hover{color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(99,230,190,.75));
+      color:#081020; border:none;
+    }
+
+    .hero{
+      display:grid; grid-template-columns:1.2fr .8fr;
+      gap:22px; padding:58px 0 24px;
+    }
+    .card{
+      background: rgba(18,27,46,.78);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-left{padding:28px}
+    .hero-right{padding:18px}
+
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      font-size:13px; color:var(--muted);
+      border:1px solid var(--border);
+      padding:6px 10px; border-radius:999px;
+    }
+    h1{font-size:42px; margin:14px 0 10px}
+    .sub{color:var(--muted); max-width:60ch}
+
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+    .fineprint{font-size:12px; color:rgba(233,238,252,.65); margin-top:10px}
+
+    section{padding:22px 0}
+    .section-title{font-size:22px; margin:0 0 10px}
+    .section-sub{color:var(--muted); max-width:85ch; margin-bottom:16px}
+
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    .service{
+      padding:16px; border-radius:var(--radius);
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+    .service p{color:var(--muted); font-size:14px}
+
+    .plans{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    .plan{
+      padding:18px; border-radius:var(--radius);
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+    .price{font-size:28px; margin:10px 0}
+    ul{padding-left:18px; color:var(--muted)}
+
+    form label{display:block; margin-top:10px; color:var(--muted); font-size:13px}
+    input, textarea, select{
+      width:100%; padding:10px 12px; margin-top:6px;
+      border-radius:12px; border:1px solid var(--border);
+      background: rgba(0,0,0,.20); color:var(--text);
+    }
+    textarea{min-height:110px}
+
+    footer{
+      border-top:1px solid var(--border);
+      margin-top:24px; padding:28px 0;
+      color:var(--muted);
+    }
+
+    @media(max-width:900px){
+      .hero, .grid3, .plans{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      Lowery Technology Solutions
+      <span class="badge">Remote IT Support • US Only</span>
+    </div>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#pay">Pay Now</a>
+      <a href="#request">Request Support</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="card hero-left">
+      <div class="kicker">✅ Pay before session • 🔒 Secure remote access • 🇺🇸 US only</div>
+      <h1>Fast, professional remote tech support.</h1>
+      <p class="sub">
+        Lowery Technology Solutions provides reliable remote IT support for home users and small businesses.
+        Most sessions are completed remotely using attended TeamViewer access.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#pay">Pay & Schedule</a>
+        <a class="btn" href="https://calendly.com/YOUR-LINK" target="_blank" rel="noopener">Book Time First</a>
+      </div>
+
+      <p class="fineprint">
+        Payment is required before the session. If you book first, we’ll send a Stripe payment link to confirm your appointment.
+      </p>
+    </div>
+
+    <div class="card hero-right">
+      <h3>How it works</h3>
+      <p class="sub">A simple, secure process.</p>
+      <ul>
+        <li>Choose a session length</li>
+        <li>Pay securely via Stripe</li>
+        <li>Schedule your time with Calendly</li>
+        <li>Connect remotely (attended access)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <p class="section-sub">Common issues we handle during remote sessions.</p>
+
+    <div class="grid3">
+      <div class="service"><h4>Troubleshooting</h4><p>Errors, crashes, Wi-Fi, printers, and software issues.</p></div>
+      <div class="service"><h4>Device Setup</h4><p>New computer setup, updates, and data transfer.</p></div>
+      <div class="service"><h4>Email & Apps</h4><p>Email setup, sync problems, app configuration.</p></div>
+      <div class="service"><h4>Performance Tune-Up</h4><p>Slow systems, cleanup, stability improvements.</p></div>
+      <div class="service"><h4>Basic Security</h4><p>MFA setup, updates, safer settings.</p></div>
+      <div class="service"><h4>Small Business Help</h4><p>On-call support for common business tools.</p></div>
+    </div>
+  </section>
+
+  <!-- PAY NOW -->
+  <section id="pay">
+    <h2 class="section-title">Pay now (required before session)</h2>
+    <p class="section-sub">Choose your session length and complete payment.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Quick Fix</h3>
+        <div class="price">$79</div>
+        <p class="fineprint">Up to 30 minutes</p>
+        <a class="btn primary" href="PASTE_STRIPE_LINK_30" target="_blank">Pay $79</a>
+      </div>
+
+      <div class="plan">
+        <h3>Standard Session</h3>
+        <div class="price">$129</div>
+        <p class="fineprint">Up to 60 minutes</p>
+        <a class="btn primary" href="PASTE_STRIPE_LINK_60" target="_blank">Pay $129</a>
+      </div>
+
+      <div class="plan">
+        <h3>Deep Dive</h3>
+        <div class="price">$199</div>
+        <p class="fineprint">Up to 90 minutes</p>
+        <a class="btn primary" href="PASTE_STRIPE_LINK_90" target="_blank">Pay $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST FORM -->
+  <section id="request">
+    <h2 class="section-title">Request support</h2>
+    <p class="section-sub">Prefer to explain the issue first? Submit a request.</p>
+
+    <div class="card">
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Are you located in the US?</label>
+        <select name="us_only" required>
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label>Describe the issue</label>
+        <textarea name="message" required></textarea>
+
+        <button class="btn primary" type="submit">Send Request</button>
+
+        <p class="fineprint">
+          Remote sessions may use TeamViewer. Lowery Technology Solutions is not affiliated with or endorsed by TeamViewer.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Lowery Technology Solutions</strong> • Remote IT Support<br>
+    © <span id="year"></span> Lowery Technology Solutions • All rights reserved
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
